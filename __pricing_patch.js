@@ -472,7 +472,10 @@
       .fq summary::-webkit-details-marker{display:none}
       .fq .chev{font-size:20px;font-weight:400;color:#2239bd;transition:transform .25s ease;flex:none}
       .fq details[open] .chev{transform:rotate(45deg)}
-      .fq details p{padding:0 22px 18px;font-size:14.5px;font-weight:400;line-height:1.6;color:#3b3f41}
+      .fq details[open] p{padding:0 22px 18px;font-size:14.5px;font-weight:400;line-height:1.6;color:#3b3f41;animation:fqreveal .26s ease}
+      @keyframes fqreveal{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:none}}
+      .fq details summary{transition:background .2s ease}
+      .fq details[open] summary{background:#fafbff}
       .fq .noresult{display:none;text-align:center;color:#3b3f41;font-size:14.5px;padding:18px;background:#fff;border:1px solid #efefef;border-radius:18px}
       .fq .noresult a{color:#2239bd;font-weight:600;text-decoration:none}
       .fq .more{text-align:center;margin-top:26px;font-size:14px;color:#3b3f41}
