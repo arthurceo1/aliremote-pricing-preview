@@ -102,7 +102,8 @@
   /* in-house */
   .npx .inhouse{display:none;border-radius:24px;background:var(--cardbg);box-shadow:var(--cardshadow);padding:6px}
   .npx .inhouse .inwrap{background:#fff;border-radius:19px;padding:34px}
-  .npx .inhouse .grid{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:start}
+  .npx .inhouse .grid{display:grid;grid-template-columns:1fr;gap:26px;align-items:start}
+  .npx .inhouse .grid > div:first-child{max-width:760px}
   .npx .bigprice{font-size:42px;font-weight:600;letter-spacing:-1.4px}
   .npx .bigprice small{font-size:15px;color:#959595;font-weight:400;letter-spacing:0}
   .npx ul.feat{list-style:none;margin-top:14px}
@@ -117,8 +118,8 @@
   .npx .inh-link{display:inline-block;margin-top:18px;color:#2239bd;text-decoration:underline;text-underline-offset:2px;font-weight:600;font-size:15px}
   .npx .inh-link:hover{color:#46d3f6}
   .npx .inh-book{display:flex;flex-direction:column}
-  .npx .cal-embed{width:100%;min-height:560px;border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 4px 15px rgba(0,0,0,.05)}
-  .npx .cal-embed iframe{width:100%!important;min-height:560px!important;border:0}
+  .npx .cal-embed{width:100%;min-height:620px;border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 4px 15px rgba(0,0,0,.05)}
+  .npx .cal-embed iframe{width:100%!important;min-height:620px!important;border:0}
   @media(max-width:900px){.npx .tiers{grid-template-columns:repeat(2,1fr)}.npx .sim .simwrap{grid-template-columns:1fr}
     .npx .conn{grid-template-columns:1fr}.npx .inhouse .grid{grid-template-columns:1fr}}
   `;
@@ -192,7 +193,8 @@
   .npx .help b{color:var(--ink)}
   .npx .help a{background:var(--grad);color:#fff;text-decoration:none;font-size:13.5px;font-weight:700;padding:11px 18px;border-radius:11px;white-space:nowrap;box-shadow:0 6px 18px rgba(34,57,189,.3)}
   .npx .inhouse{display:none;border:1.5px solid var(--line);border-radius:22px;padding:34px;box-shadow:0 24px 70px rgba(14,16,21,.10);background:#fff}
-  .npx .inhouse .grid{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:start}
+  .npx .inhouse .grid{display:grid;grid-template-columns:1fr;gap:26px;align-items:start}
+  .npx .inhouse .grid > div:first-child{max-width:760px}
   .npx .bigprice{font-size:40px;font-weight:800;letter-spacing:-.03em}
   .npx .bigprice small{font-size:15px;color:var(--mut);font-weight:500}
   .npx ul.feat{list-style:none;margin-top:14px}
