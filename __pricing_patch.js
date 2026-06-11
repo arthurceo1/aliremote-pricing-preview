@@ -94,12 +94,11 @@
   .npx .custom-banner{display:none;margin-top:auto;background:hsla(0,0%,100%,.06);border:1px solid hsla(0,0%,100%,.14);border-radius:16px;padding:14px;font-size:13.5px;font-weight:400;line-height:1.5}
   .npx .custom-banner a{color:#46d3f6;font-weight:600}
   /* help bar */
-  .npx .help{margin-top:34px;display:flex;align-items:center;justify-content:center;gap:16px;background:#fff;border-radius:24px;box-shadow:var(--cardshadow);border:1px solid #efefef;padding:18px 24px}
-  .npx .help p{font-size:14.5px;color:#3b3f41;font-weight:400}
+  .npx .help{margin-top:14px;display:flex;align-items:center;justify-content:center;gap:7px;background:transparent;border:0;box-shadow:none;padding:10px 24px;flex-wrap:wrap}
+  .npx .help p{font-size:13.5px;color:#6b7280;font-weight:400}
   .npx .help b{color:#000;font-weight:600}
-  .npx .help a{background:linear-gradient(180deg,#000,#666 200%);border:2px solid #353535;color:#fff;text-decoration:none;
-    font-size:14px;font-weight:500;letter-spacing:-.3px;padding:10px 22px;border-radius:90px;white-space:nowrap;transition:transform .3s ease}
-  .npx .help a:hover{transform:translateY(-2px) scale(1.02)}
+  .npx .help a{background:none;border:0;color:#2239bd;text-decoration:underline;text-underline-offset:2px;font-size:13.5px;font-weight:600;padding:0;white-space:nowrap}
+  .npx .help a:hover{color:#46d3f6}
   /* in-house */
   .npx .inhouse{display:none;border-radius:24px;background:var(--cardbg);box-shadow:var(--cardshadow);padding:6px}
   .npx .inhouse .inwrap{background:#fff;border-radius:19px;padding:34px}
@@ -409,7 +408,7 @@
   }
 
   const killBar = document.createElement("style");
-  killBar.textContent = ".sticky-bar,#intercom-container,.intercom-lightweight-app,[class*=intercom]{display:none!important} .get-started-today-btn{display:none!important} .sticky-cta-buttons{left:auto!important;right:20px!important;bottom:20px!important;transform:none!important;margin:0!important} #back-to-top{bottom:84px!important;right:20px!important} header .container-header{padding-top:10px!important;padding-bottom:10px!important} .fade-in-section,.fade-up,.fade-in,[class*=fade-up],[class*=fade-in],[class*=fade]{opacity:1!important;transform:none!important;filter:none!important;visibility:visible!important;animation:none!important;transition:none!important}";
+  killBar.textContent = ".sticky-bar,#intercom-container,.intercom-lightweight-app,[class*=intercom]{display:none!important} .get-started-today-btn{display:none!important} .sticky-cta-buttons{left:auto!important;right:20px!important;bottom:20px!important;transform:none!important;margin:0!important} #back-to-top{bottom:84px!important;right:20px!important} header.landing-header,header{height:auto!important;min-height:0!important} header .container-header{padding-top:8px!important;padding-bottom:8px!important;height:auto!important;min-height:0!important} header img.logo{height:40px!important;width:auto!important} header .logo{height:auto!important;line-height:0!important} .fade-in-section,.fade-up,.fade-in,[class*=fade-up],[class*=fade-in],[class*=fade]{opacity:1!important;transform:none!important;filter:none!important;visibility:visible!important;animation:none!important;transition:none!important}";
   document.head.appendChild(killBar);
 
   const FAQ_SECTIONS = [
