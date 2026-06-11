@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="en"><head><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-P453SRWJ');</script><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="description" content="Remotely control and manage all your devices with ALI Remote. Fast, secure, and built for professionals. Discover features, integrations, and other."><link rel="icon" type="image/x-icon" href="favicon.ico"><title>ALI Remote</title><script>(function () {
+			const cookies = document.cookie.split('; ');
+			let theme = 'light';
+			for (const cookie of cookies) {
+				if (cookie.startsWith('theme=')) {
+					theme = cookie.split('=')[1];
+					break;
+				}
+			}
+			const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+			const isDark = theme === 'dark' || (theme === 'auto' && prefersDark);
+			document.documentElement.classList.add(isDark ? 'dark-theme' : 'light-theme');
+		})();</script><script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/r5ixdsf7';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script><style>.env-banner {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 99999;
+			padding: 10px 14px;
+			font-size: 13px;
+			line-height: 1.2;
+			text-align: center;
+			background: #222;
+			color: #fff;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+		}
+		.env-banner a {
+			color: inherit;
+			text-decoration: underline;
+			font-weight: 600;
+		}
+		.env-banner--testing {
+			background: #2a6fdb;
+		}
+		.env-banner--warning {
+			background: #d64545;
+		}</style><script defer="defer" src="/static/runtime.c533710d8036e6b3ba75.js?c40e020c2e4785d60a41"></script><script defer="defer" src="/static/vendors.29ea92622f552136b377.js?c40e020c2e4785d60a41"></script><script defer="defer" src="/static/main.c1b62e6af8fbee7e4b40.js?c40e020c2e4785d60a41"></script><link href="/static/main.16ff2a39066a61107b21.css?c40e020c2e4785d60a41" rel="stylesheet"></head><body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P453SRWJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="env-banner" class="env-banner" hidden></div><div id="app"></div><script>(function () {
+			const banner = document.getElementById('env-banner');
+			if (!banner)
+				return;
+			const host = window.location.hostname.toLowerCase();
+			const prodLink = '<a href="https://aliremote.com" target="_blank" rel="noopener noreferrer">aliremote.com</a>';
+			const isLocalhost = host === 'localhost' ||
+				host === '127.0.0.1' ||
+				host === '0.0.0.0' ||
+				host.endsWith('.localhost');
+			const isProd = host === 'aliremote.com' ||
+				host.endsWith('.aliremote.com');
+			if (isLocalhost || isProd) {
+				banner.hidden = true;
+				return;
+			}
+			// document.body.style.paddingTop = "42px";
+			if (host === 'ali-remote.xyz' || host.endsWith('.ali-remote.xyz')) {
+				banner.classList.add('env-banner--testing');
+				banner.innerHTML = `<span>This is a testing site. For production use: ${prodLink}</span>`;
+				banner.hidden = false;
+				return;
+			}
+			banner.classList.add('env-banner--warning');
+			banner.innerHTML = `<span>Warning: you are not on an approved domain. Do not use this environment. Use: ${prodLink}</span>`;
+			banner.hidden = false;
+		})();</script><script src="/__pricing_patch.js"></script></body></html>
