@@ -113,7 +113,7 @@
   .npx .boxshot .ph{height:190px;border-radius:14px;border:2px dashed #b9cdfb;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:#2239bd;font-weight:600;font-size:14px;background:rgba(255,255,255,.65)}
   .npx .boxshot .ph span{font-size:34px}
   .npx .boxshot p{font-size:12px;color:#959595;font-weight:400;margin-top:10px}
-  .npx .inh-note{font-size:13px;color:#2239bd;background:#eef3ff;border:1px solid #d6e2ff;border-radius:12px;padding:12px 14px;font-weight:500;margin-bottom:14px;line-height:1.45}
+  .npx .inh-note{font-size:13px;color:#2239bd;background:#eef3ff;border:1px solid #d6e2ff;border-radius:12px;padding:12px 14px;font-weight:500;margin-top:14px;line-height:1.45}
   .npx .inh-link{display:inline-block;margin-top:18px;color:#2239bd;text-decoration:underline;text-underline-offset:2px;font-weight:600;font-size:15px}
   .npx .inh-link:hover{color:#46d3f6}
   .npx .inh-book{display:flex;flex-direction:column}
@@ -281,9 +281,10 @@
             <li><b>Custom plans</b> based on how many iPhones you run</li>
             <li>Best for large teams &amp; full control</li>
           </ul>
+          <a class="inh-link" href="https://cal.com/alixtudss/in-house-discovery" target="_blank" rel="noopener">Book your in-house call →</a>
+          <div class="inh-note">📅 In-house setups are tailored to your operation, so an in-house call is required before getting started.</div>
         </div>
         <div class="inh-book">
-          <div class="inh-note">📅 In-house setups are tailored to your operation, so an in-house call is required before getting started.</div>
           <div class="cal-embed" id="npx-cal"></div>
         </div>
       </div>
