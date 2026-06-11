@@ -274,7 +274,7 @@
         <div>
           <div class="range" style="font-size:12.5px;font-weight:700;color:#6b7280;text-transform:uppercase">In-house: your office, our tech</div>
           <div class="bigprice" style="margin-top:8px">from $16<small> /iPhone/mo</small></div>
-          <div style="font-size:14px;color:#6b7280;margin-top:6px">+ <b style="color:#000">$1,000</b> one-time per ALI Box, <b style="color:#000">delivery included</b></div>
+          <div style="font-size:14px;color:#6b7280;margin-top:6px">+ <b style="color:#000">$1,000</b> one-time per ALI Box <span style="color:#959595">(holds up to 32 iPhones each)</span></div>
           <ul class="feat">
             <li>Same ALI platform, automations &amp; dashboard</li>
             <li>Use your own iPhones from your office</li>
