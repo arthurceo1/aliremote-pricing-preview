@@ -404,7 +404,7 @@
     if (homeLink) (homeLink.closest("li") || homeLink).remove();
     const aboutLink = document.querySelector('header a[href="#video-texts"]');
     if (aboutLink) { aboutLink.textContent = "About"; aboutLink.setAttribute("href", "#about"); }
-    document.querySelectorAll(".how-it-works, a.how-it-works, button.how-it-works").forEach((e) => (e.closest("li") || e).remove());
+    document.querySelectorAll(".how-it-works, a.how-it-works, button.how-it-works, .see-plans-btn, a.see-plans-btn").forEach((e) => (e.closest("li") || e).remove());
     const vt = document.getElementById("video-texts");
     if (vt && !document.getElementById("about")) { const a = document.createElement("div"); a.id = "about"; vt.parentElement.insertBefore(a, vt); }
     const clientsLink = document.querySelector('header a[href="#clients"]');
@@ -480,7 +480,7 @@
     </style>
     <div class="fq">
       <h2>Frequently asked <span>questions</span></h2>
-      <p class="sub">Everything our members ask before getting started.</p>
+      <p class="sub">Everything our clients ask before getting started.</p>
       <div class="search">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9aa1ad" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3-3"/></svg>
         <input id="fqs" type="text" placeholder="Ask a question..." />
