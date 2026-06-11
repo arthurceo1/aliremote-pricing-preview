@@ -29,6 +29,9 @@
   .npx .toggle button.on{background:#fff;color:#000;box-shadow:0 4px 16px rgba(0,0,0,.10),0 1px 3px rgba(0,0,0,.06)}
   .npx .toggle button.on span{color:#2239bd}
   .npx .toggle button span{display:block;font-size:12px;font-weight:500;color:#9aa0a8;letter-spacing:-.2px;margin-top:2px}
+  .npx .toggle button.soon{opacity:.6;cursor:not-allowed}
+  .npx .toggle button.soon:hover{color:#7a7f87}
+  .npx .soon-badge{font-style:normal;display:inline-block;margin-left:7px;font-size:10px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#6b7280;background:#e5e7eb;border-radius:99px;padding:2px 8px;vertical-align:middle}
   /* tier cards: the site's pricing-card recipe: gradient rim + white inner */
   .npx .billing{display:flex;justify-content:center;margin-bottom:22px}
   .npx .bbox{display:flex;gap:4px;background:#fff;border:1px solid #e5e5e5;border-radius:90px;padding:4px;box-shadow:0 4px 15px rgba(0,0,0,.06)}
@@ -219,7 +222,7 @@
     <p class="p-sub">Pay per iPhone, per month. The more you scale, the less you pay. No hidden fees.</p>
     <div class="toggle"><div class="box">
       <button id="t-office" class="on">Office <span>hosted &amp; managed by ALI</span></button>
-      <button id="t-inhouse">In-house <span>our hardware, your office</span></button>
+      <button id="t-inhouse" class="soon" disabled>In-house <em class="soon-badge">Coming soon</em><span>our hardware, your office</span></button>
     </div></div>
     <div id="npx-office">
       <div class="billing"><div class="bbox">
