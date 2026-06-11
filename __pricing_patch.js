@@ -102,7 +102,7 @@
   /* in-house */
   .npx .inhouse{display:none;border-radius:24px;background:var(--cardbg);box-shadow:var(--cardshadow);padding:6px}
   .npx .inhouse .inwrap{background:#fff;border-radius:19px;padding:34px}
-  .npx .inhouse .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center}
+  .npx .inhouse .grid{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:start}
   .npx .bigprice{font-size:42px;font-weight:600;letter-spacing:-1.4px}
   .npx .bigprice small{font-size:15px;color:#959595;font-weight:400;letter-spacing:0}
   .npx ul.feat{list-style:none;margin-top:14px}
@@ -113,12 +113,11 @@
   .npx .boxshot .ph{height:190px;border-radius:14px;border:2px dashed #b9cdfb;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:#2239bd;font-weight:600;font-size:14px;background:rgba(255,255,255,.65)}
   .npx .boxshot .ph span{font-size:34px}
   .npx .boxshot p{font-size:12px;color:#959595;font-weight:400;margin-top:10px}
-  .npx .inh-note{margin-top:18px;font-size:13px;color:#2239bd;background:#eef3ff;border:1px solid #d6e2ff;border-radius:12px;padding:11px 14px;font-weight:500}
-  .npx .inh-cta{display:flex;gap:10px;margin-top:14px}
-  .npx .inh-cta a{flex:1;text-align:center;text-decoration:none;font-weight:500;font-size:14.5px;letter-spacing:-.3px;padding:12px;border-radius:90px;transition:transform .3s ease}
-  .npx .inh-cta a:hover{transform:translateY(-2px) scale(1.02)}
-  .npx .inh-cta a.primary{background:linear-gradient(180deg,#000,#666 200%);border:2px solid #353535;color:#fff}
-  .npx .inh-cta a.ghost{border:1px solid #e5e5e5;color:#000;background:#fff;box-shadow:0 4px 15px rgba(0,0,0,.08)}
+  .npx .inh-note{font-size:13px;color:#2239bd;background:#eef3ff;border:1px solid #d6e2ff;border-radius:12px;padding:12px 14px;font-weight:500;margin-bottom:14px;line-height:1.45}
+  .npx .inh-link{display:inline-block;margin-top:18px;color:#2239bd;text-decoration:underline;text-underline-offset:2px;font-weight:600;font-size:15px}
+  .npx .inh-link:hover{color:#46d3f6}
+  .npx .inh-book{display:flex;flex-direction:column}
+  .npx .cal-embed{width:100%;min-height:560px;border:0;border-radius:16px;background:#fff;box-shadow:0 4px 15px rgba(0,0,0,.05)}
   @media(max-width:900px){.npx .tiers{grid-template-columns:repeat(2,1fr)}.npx .sim .simwrap{grid-template-columns:1fr}
     .npx .conn{grid-template-columns:1fr}.npx .inhouse .grid{grid-template-columns:1fr}}
   `;
@@ -192,7 +191,7 @@
   .npx .help b{color:var(--ink)}
   .npx .help a{background:var(--grad);color:#fff;text-decoration:none;font-size:13.5px;font-weight:700;padding:11px 18px;border-radius:11px;white-space:nowrap;box-shadow:0 6px 18px rgba(34,57,189,.3)}
   .npx .inhouse{display:none;border:1.5px solid var(--line);border-radius:22px;padding:34px;box-shadow:0 24px 70px rgba(14,16,21,.10);background:#fff}
-  .npx .inhouse .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center}
+  .npx .inhouse .grid{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:start}
   .npx .bigprice{font-size:40px;font-weight:800;letter-spacing:-.03em}
   .npx .bigprice small{font-size:15px;color:var(--mut);font-weight:500}
   .npx ul.feat{list-style:none;margin-top:14px}
@@ -281,14 +280,11 @@
             <li><b>Custom plans</b> based on how many iPhones you run</li>
             <li>Best for large teams &amp; full control</li>
           </ul>
-          <div class="inh-note">📅 In-house setups are tailored to your operation, so an In-house call is required before getting started.</div>
-          <div class="inh-cta">
-            <a class="primary" href="https://cal.com/alixtudss/in-house-discovery">Book your In-house call →</a>
-          </div>
+          <a class="inh-link" href="https://cal.com/alixtudss/in-house-discovery" target="_blank" rel="noopener">Book your in-house call →</a>
         </div>
-        <div class="boxshot">
-          <div class="ph"><span>📦</span>ALI Box photo coming soon</div>
-          <p>The plug-and-play hardware that runs your iPhones. Ships to your office, delivery included.</p>
+        <div class="inh-book">
+          <div class="inh-note">📅 In-house setups are tailored to your operation, so an in-house call is required before getting started.</div>
+          <iframe class="cal-embed" src="https://cal.com/alixtudss/in-house-discovery?embed=true&layout=month_view" title="Book your in-house call" loading="lazy"></iframe>
         </div>
       </div>
     </div></div>
