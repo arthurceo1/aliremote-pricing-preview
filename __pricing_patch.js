@@ -221,7 +221,7 @@
     <h2 class="p-title">Get started <span class="gt">from $49</span>. Upgrade as you grow.</h2>
     <p class="p-sub">Pay per iPhone, per month. The more you scale, the less you pay. No hidden fees.</p>
     <div class="toggle"><div class="box">
-      <button id="t-office" class="on">Office <span>hosted &amp; managed by ALI</span></button>
+      <button id="t-office" class="on">Rent <span>hosted &amp; managed by ALI</span></button>
       <button id="t-inhouse" class="soon" disabled>In-house <em class="soon-badge">Coming soon</em><span>our hardware, your office</span></button>
     </div></div>
     <div id="npx-office">
@@ -295,7 +295,7 @@
       </div>
     </div></div>
     <div class="help" id="npx-help">
-      <p>🤙 <b>Not sure which setup fits your company?</b> Mobile data vs proxy, office vs in-house. We'll figure it out together in 30 minutes.</p>
+      <p>🤙 <b>Not sure which setup fits your company?</b> Mobile data vs proxy, rent vs in-house. We'll figure it out together in 30 minutes.</p>
       <a href="https://cal.com/alixtudss/discovery-call">Book a discovery call</a>
     </div>
   </div>`;
