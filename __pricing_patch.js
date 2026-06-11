@@ -34,8 +34,8 @@
   .npx .bbox{display:flex;gap:4px;background:#fff;border:1px solid #e5e5e5;border-radius:90px;padding:4px;box-shadow:0 4px 15px rgba(0,0,0,.06)}
   .npx .bbox button{border:0;border-radius:90px;background:transparent;padding:8px 20px;font-size:13.5px;font-weight:600;color:#7a7f87;cursor:pointer;transition:all .2s ease}
   .npx .bbox button.on{background:linear-gradient(180deg,#000,#666 200%);color:#fff}
-  .npx .bbox button em{font-style:normal;font-size:11px;font-weight:600;color:#fe2623;margin-left:5px}
-  .npx .bbox button.on em{color:#ff9c9a}
+  .npx .bbox button em{font-style:normal;font-size:11px;font-weight:600;color:#2239bd;background:#e4edff;border-radius:99px;padding:3px 9px;margin-left:6px;display:inline-block}
+  .npx .bbox button.on em{color:#fff;background:linear-gradient(90deg,#2239bd,#46d3f6)}
   .npx .incl{font-size:12px;color:#9ca3af;margin-top:4px}
   .npx .tiers{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:16px;padding-top:12px}
   .npx .tier{position:relative;border:0;border-radius:24px;background:var(--cardbg);box-shadow:var(--cardshadow);
@@ -114,7 +114,8 @@
   .npx .boxshot .ph{height:190px;border-radius:14px;border:2px dashed #b9cdfb;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:#2239bd;font-weight:600;font-size:14px;background:rgba(255,255,255,.65)}
   .npx .boxshot .ph span{font-size:34px}
   .npx .boxshot p{font-size:12px;color:#959595;font-weight:400;margin-top:10px}
-  .npx .inh-cta{display:flex;gap:10px;margin-top:20px}
+  .npx .inh-note{margin-top:18px;font-size:13px;color:#2239bd;background:#eef3ff;border:1px solid #d6e2ff;border-radius:12px;padding:11px 14px;font-weight:500}
+  .npx .inh-cta{display:flex;gap:10px;margin-top:14px}
   .npx .inh-cta a{flex:1;text-align:center;text-decoration:none;font-weight:500;font-size:14.5px;letter-spacing:-.3px;padding:12px;border-radius:90px;transition:transform .3s ease}
   .npx .inh-cta a:hover{transform:translateY(-2px) scale(1.02)}
   .npx .inh-cta a.primary{background:linear-gradient(180deg,#000,#666 200%);border:2px solid #353535;color:#fff}
@@ -141,8 +142,8 @@
   .npx .bbox{display:flex;gap:4px;background:#fff;border:1px solid #e5e5e5;border-radius:90px;padding:4px;box-shadow:0 4px 15px rgba(0,0,0,.06)}
   .npx .bbox button{border:0;border-radius:90px;background:transparent;padding:8px 20px;font-size:13.5px;font-weight:600;color:#7a7f87;cursor:pointer;transition:all .2s ease}
   .npx .bbox button.on{background:linear-gradient(180deg,#000,#666 200%);color:#fff}
-  .npx .bbox button em{font-style:normal;font-size:11px;font-weight:600;color:#fe2623;margin-left:5px}
-  .npx .bbox button.on em{color:#ff9c9a}
+  .npx .bbox button em{font-style:normal;font-size:11px;font-weight:600;color:#2239bd;background:#e4edff;border-radius:99px;padding:3px 9px;margin-left:6px;display:inline-block}
+  .npx .bbox button.on em{color:#fff;background:linear-gradient(90deg,#2239bd,#46d3f6)}
   .npx .incl{font-size:12px;color:#9ca3af;margin-top:4px}
   .npx .tiers{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:14px}
   .npx .tier{border:1.5px solid var(--line);border-radius:18px;padding:18px 16px;position:relative;background:#fff;transition:.18s;cursor:pointer;text-align:left;box-shadow:0 8px 30px rgba(0,0,0,.04)}
@@ -222,7 +223,7 @@
     <div id="npx-office">
       <div class="billing"><div class="bbox">
         <button id="npx-bill-mo" class="on">Monthly</button>
-        <button id="npx-bill-yr">Yearly <em>extra 20% off</em></button>
+        <button id="npx-bill-yr">Yearly <em>20% off</em></button>
       </div></div>
       <div class="tiers">
         <button class="tier" data-tier="0"><div class="inner"><div class="range">5 – 9 iPhones</div><div class="price"><span class="old o0" style="display:none">$79</span><span class="big b0">$79</span><small> /iPhone/mo</small></div></div></button>
@@ -271,7 +272,7 @@
       <div class="grid">
         <div>
           <div class="range" style="font-size:12.5px;font-weight:700;color:#6b7280;text-transform:uppercase">In-house: your office, our tech</div>
-          <div class="bigprice" style="margin-top:8px">from $40<small> /iPhone/mo</small></div>
+          <div class="bigprice" style="margin-top:8px">from $16<small> /iPhone/mo</small></div>
           <div style="font-size:14px;color:#6b7280;margin-top:6px">+ <b style="color:#000">$1,000</b> one-time per ALI Box, <b style="color:#000">delivery included</b></div>
           <ul class="feat">
             <li>Same ALI platform, automations &amp; dashboard</li>
@@ -281,9 +282,9 @@
             <li><b>Custom plans</b> based on how many iPhones you run</li>
             <li>Best for large teams &amp; full control</li>
           </ul>
+          <div class="inh-note">📅 In-house setups are tailored to your operation, so an In-house call is required before getting started.</div>
           <div class="inh-cta">
-            <a class="primary" href="https://cal.com/alixtudss/discovery-call">Book a discovery call →</a>
-            <a class="ghost" href="/#/signup">Get started</a>
+            <a class="primary" href="https://cal.com/alixtudss/in-house-discovery">Book your In-house call →</a>
           </div>
         </div>
         <div class="boxshot">
@@ -292,7 +293,7 @@
         </div>
       </div>
     </div></div>
-    <div class="help">
+    <div class="help" id="npx-help">
       <p>🤙 <b>Not sure which setup fits your company?</b> Mobile data vs proxy, office vs in-house. We'll figure it out together in 30 minutes.</p>
       <a href="https://cal.com/alixtudss/discovery-call">Book a discovery call</a>
     </div>
@@ -381,14 +382,15 @@
       }));
     $("npx-bill-mo").addEventListener("click", () => { billing = "monthly"; $("npx-bill-mo").classList.add("on"); $("npx-bill-yr").classList.remove("on"); render(); });
     $("npx-bill-yr").addEventListener("click", () => { billing = "yearly"; $("npx-bill-yr").classList.add("on"); $("npx-bill-mo").classList.remove("on"); render(); });
-    $("t-office").addEventListener("click", () => { $("npx-office").style.display = "block"; $("npx-inhouse").style.display = "none"; $("t-office").classList.add("on"); $("t-inhouse").classList.remove("on"); });
-    $("t-inhouse").addEventListener("click", () => { $("npx-office").style.display = "none"; $("npx-inhouse").style.display = "block"; $("t-inhouse").classList.add("on"); $("t-office").classList.remove("on"); });
+    $("t-office").addEventListener("click", () => { $("npx-office").style.display = "block"; $("npx-inhouse").style.display = "none"; $("npx-help").style.display = "flex"; $("t-office").classList.add("on"); $("t-inhouse").classList.remove("on"); });
+    $("t-inhouse").addEventListener("click", () => { $("npx-office").style.display = "none"; $("npx-inhouse").style.display = "block"; $("npx-help").style.display = "none"; $("t-inhouse").classList.add("on"); $("t-office").classList.remove("on"); });
     if (!document.getElementById("pricing")) {
       const anchor = document.createElement("div");
       anchor.id = "pricing";
       section.parentElement.insertBefore(anchor, section);
     }
     document.querySelectorAll('a[href="#pricing-plans"]').forEach((a) => (a.href = "#pricing"));
+    document.querySelectorAll('a.message-btn, a[href*="t.me/aliremoteios"]').forEach((a) => (a.href = "https://t.me/alixtuds"));
     const homeLink = document.querySelector('header a[href="#hero"]');
     if (homeLink) (homeLink.closest("li") || homeLink).remove();
     const clientsLink = document.querySelector('header a[href="#clients"]');
@@ -407,28 +409,28 @@
   }
 
   const killBar = document.createElement("style");
-  killBar.textContent = ".sticky-bar,#intercom-container,.intercom-lightweight-app,[class*=intercom]{display:none!important} #back-to-top{bottom:20px!important;right:20px!important} header .container-header{padding-top:10px!important;padding-bottom:10px!important} header{--header-shrink:1}";
+  killBar.textContent = ".sticky-bar,#intercom-container,.intercom-lightweight-app,[class*=intercom]{display:none!important} .get-started-today-btn{display:none!important} .sticky-cta-buttons{left:auto!important;right:20px!important;bottom:20px!important;transform:none!important;margin:0!important} #back-to-top{bottom:84px!important;right:20px!important} header .container-header{padding-top:10px!important;padding-bottom:10px!important} .fade-in-section,.fade-up,.fade-in,[class*=fade-up],[class*=fade-in],[class*=fade]{opacity:1!important;transform:none!important;filter:none!important;visibility:visible!important;animation:none!important;transition:none!important}";
   document.head.appendChild(killBar);
 
-  const FAQ_ITEMS = [
-    ["What is ALI?", "ALI is a remote iPhone platform built for marketing and social media teams. You rent real iPhones hosted in our facilities and control them 100% remotely from your browser: manage, automate and scale your accounts without buying or maintaining any hardware."],
-    ["Are remote iPhones better than remote Androids?", "For social media, yes. Platforms give iOS devices stronger trust signals, and most cheap remote farms run emulated or rooted Androids that end up flagged. ALI iPhones are the same real hardware your audience uses, which protects your reach."],
-    ["Why is ALI more expensive than the competition?", "Because you rent real iPhones, not emulators or shared Androids. Real devices, real mobile connectivity, hosting, electricity, maintenance and 24/7 support with a physical team on site, all included. One banned account usually costs more than the price difference."],
-    ["Can I use it for Instagram and other social media?", "Yes. ALI uses real iPhones, not emulators or APIs, so platforms see a normal device. Instagram, TikTok, Threads, Reddit, Facebook and more."],
-    ["Will my accounts get flagged?", "No. Your accounts run on real, organic devices with real mobile connectivity. ALI has never been detected by any platform."],
-    ["Can I do TikTok and Instagram on the same iPhone?", "You can, but we recommend one platform per iPhone: TikTok and Instagram perform best with different setups, so dedicated devices get more consistent results."],
-    ["What are the connectivity options?", "Three options per iPhone: ALI Wi-Fi (included, bring your own custom proxy if you want), real mobile data with a dedicated SIM card ($11/month + $10 setup per iPhone), or a mobile proxy in the country of your choice ($90/month + $95 setup, covers up to 20 iPhones)."],
-    ["How does the Wi-Fi proxy work?", "Your iPhone connects to a dedicated Wi-Fi that routes all its traffic through a real mobile proxy in the country you choose. Platforms see a normal mobile connection from that location, and you can rotate the IP whenever you need."],
-    ["How do I set up the phones? Do I need to buy SIM cards?", "Nothing to buy and nothing technical on your side. We prepare each iPhone before handing it over, and if you choose mobile data we source and install the SIM cards for you. You just log in and start working."],
-    ["How do I upload content to the phones?", "The easiest way is Google Drive: organize your content in shared folders, open Drive on the iPhone and download it directly. Your team can also prepare everything remotely from the dashboard."],
-    ["Can I choose the physical location of the phones?", "Your iPhones are hosted and maintained in our facilities, and with the connectivity options (SIM or mobile proxy in any country) your accounts operate from the location you choose. Prefer them at your place? The In-house plan ships the hardware to your own office."],
-    ["Can I add team members to my account?", "Yes. Create an account for each team member, assign roles and permissions, control exactly which iPhones each person can access, and track everyone's activity and productivity from the dashboard."],
-    ["Can I migrate my existing accounts?", "Yes. With your username, password and 2FA access, logging in from an ALI iPhone is just a normal device login."],
-    ["Which iPhones are you using?", "Mostly iPhone SE 3rd generation (2022): modern, stable and seen by platforms as a current device."],
-    ["Can I control my iPhones from any device?", "Yes. ALI runs in the browser, so any laptop, PC, Mac, tablet or phone works, from anywhere in the world."],
-    ["How many iPhones do I need to start?", "Plans start from 5 iPhones (minimum). You can add more anytime, and your price per iPhone drops as you scale. Cancel anytime."],
-    ["Can I rent fewer than 5 iPhones?", "No, 5 iPhones is the minimum. If you are not sure you need that many yet, book a call and we will help you plan the right start."],
-    ["Is there a trial available?", "We do not have a self-serve free trial, but we sometimes set one up case by case. Book a discovery call and we will see what makes sense for your operation."],
+  const FAQ_SECTIONS = [
+    ["Getting started", [
+      ["What is ALI?", "ALI is a remote control software for iPhones that allows you to delegate iPhones to VAs while you always keep access to the phones."],
+      ["How many iPhones do I need to start?", "Plans start from 5 iPhones (minimum). You can add more anytime, and your price per iPhone drops as you scale. Cancel anytime."],
+      ["Is there a trial available?", "We do not have a self-serve free trial, but we sometimes set one up case by case. Book a call and we will see what makes sense for your operation."],
+    ]],
+    ["Using ALI day to day", [
+      ["Can I use it for Instagram and other social media?", "Yes. ALI uses real iPhones, not emulators or APIs, so platforms see a normal device. Instagram, TikTok, Threads, Reddit, Facebook and more."],
+      ["Will my accounts get flagged?", "No. Your accounts run on real, organic devices with real mobile connectivity. ALI has never been detected by any platform."],
+      ["Can I migrate my existing accounts?", "Yes. With your username, password and 2FA access, logging in from an ALI iPhone is just a normal device login."],
+      ["How do I upload content to the phones?", "We recommend a shared folder in Google Drive, it's the most stable at the moment. We will soon launch a new feature for faster uploads."],
+      ["Can I add team members to my account?", "Yes, you can create credentials for your team, choose access levels and assign custom access to the phones."],
+    ]],
+    ["Devices & connectivity", [
+      ["Are remote iPhones better than remote Androids?", "For social media, yes. Platforms give iOS devices stronger trust signals, and most cheap remote farms run emulated or rooted Androids that end up flagged. ALI iPhones are the same real hardware your audience uses, which protects your reach."],
+      ["Which iPhones are you using?", "Mostly iPhone SE 3rd generation (2022): modern, stable and seen by platforms as a current device."],
+      ["Do you use proxies?", "Depending on the preferred social media platform you want to use, we can recommend different connectivity options."],
+      ["Can I choose the physical location of the phones?", "The physical location of the phones cannot be changed. We have different ways of targeting specific audiences, we can talk more about this on Telegram."],
+    ]],
   ];
   function mountFaq() {
     if (document.getElementById("faq")) return;
@@ -438,32 +440,72 @@
     sec.id = "faq";
     clients.parentElement.insertBefore(sec, clients.nextSibling);
     const r = sec.attachShadow({ mode: "open" });
-    const items = FAQ_ITEMS.map(([q, a]) =>
-      `<details><summary>${q}<span class="chev">+</span></summary><p>${a}</p></details>`).join("");
     r.innerHTML = `<style>
-      .fq{max-width:860px;margin:0 auto;padding:90px 24px 40px;font-family:Geist,sans-serif}
+      .fq{max-width:760px;margin:0 auto;padding:90px 24px 40px;font-family:Geist,sans-serif}
       .fq *{box-sizing:border-box;margin:0;padding:0;font-family:Geist,sans-serif;color:#000}
       .fq h2{text-align:center;font-size:38px;font-weight:600;letter-spacing:-1px;line-height:1.15;margin-bottom:8px}
       .fq h2 span{background:linear-gradient(90deg,#2239bd 24%,#46d3f6 83%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-      .fq .sub{text-align:center;color:#3b3f41;font-size:15px;font-weight:400;margin-bottom:34px}
-      .fq .cols{columns:2;column-gap:14px}
-      .fq details{break-inside:avoid;background:#fff;border-radius:18px;box-shadow:3px 9px 20px 0 rgba(77,77,77,.04);border:1px solid #efefef;margin-bottom:12px;overflow:hidden}
+      .fq .sub{text-align:center;color:#3b3f41;font-size:15px;font-weight:400;margin-bottom:22px}
+      .fq .search{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #e5e5e5;border-radius:90px;box-shadow:0 4px 15px rgba(0,0,0,.06);padding:13px 20px;margin:0 auto 26px;max-width:560px}
+      .fq .search input{border:0;outline:none;flex:1;font-size:15px;font-weight:400;background:none}
+      .fq .search svg{flex:none}
+      .fq .cat{font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#2239bd;margin:26px 4px 12px}
+      .fq .cat:first-of-type{margin-top:4px}
+      .fq details{background:#fff;border-radius:18px;box-shadow:3px 9px 20px 0 rgba(77,77,77,.04);border:1px solid #efefef;margin-bottom:10px;overflow:hidden}
       .fq details[open]{border-color:#b9cdfb}
-      .fq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:18px 22px;font-size:16px;font-weight:600;letter-spacing:-.3px}
+      .fq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:17px 22px;font-size:15.5px;font-weight:600;letter-spacing:-.3px}
       .fq summary::-webkit-details-marker{display:none}
-      .fq .chev{font-size:20px;font-weight:400;color:#2239bd;transition:transform .25s ease}
+      .fq .chev{font-size:20px;font-weight:400;color:#2239bd;transition:transform .25s ease;flex:none}
       .fq details[open] .chev{transform:rotate(45deg)}
       .fq details p{padding:0 22px 18px;font-size:14.5px;font-weight:400;line-height:1.6;color:#3b3f41}
-      .fq .more{text-align:center;margin-top:22px;font-size:14px;color:#3b3f41}
+      .fq .noresult{display:none;text-align:center;color:#3b3f41;font-size:14.5px;padding:18px;background:#fff;border:1px solid #efefef;border-radius:18px}
+      .fq .noresult a{color:#2239bd;font-weight:600;text-decoration:none}
+      .fq .more{text-align:center;margin-top:26px;font-size:14px;color:#3b3f41}
       .fq .more a{color:#2239bd;font-weight:600;text-decoration:none}
-      @media(max-width:900px){.fq .cols{columns:1}}
     </style>
     <div class="fq">
       <h2>Frequently asked <span>questions</span></h2>
       <p class="sub">Everything our members ask before getting started.</p>
-      <div class=\"cols\">${items}</div>
-      <p class="more">More questions? <a href="https://cal.com/alixtudss/discovery-call">Book a discovery call</a> or message us on <a href="https://t.me/alisupporttt">Telegram</a>.</p>
+      <div class="search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9aa1ad" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3-3"/></svg>
+        <input id="fqs" type="text" placeholder="Ask a question..." />
+      </div>
+      <div id="fqlist"></div>
+      <div class="noresult" id="fqnone">No match. <a href="https://t.me/alixtuds">Ask us directly on Telegram</a> and we answer fast.</div>
+      <p class="more">More questions? <a href="https://cal.com/alixtudss/discovery-call">Book a discovery call</a> or message us on <a href="https://t.me/alixtuds">Telegram</a>.</p>
     </div>`;
+    const list = r.getElementById("fqlist");
+    const none = r.getElementById("fqnone");
+    const item = (Q, A, open) => `<details${open ? " open" : ""}><summary>${Q}<span class="chev">+</span></summary><p>${A}</p></details>`;
+    function singleOpen() {
+      // opening one accordion closes the others
+      list.querySelectorAll("details").forEach((d) =>
+        d.addEventListener("toggle", () => {
+          if (d.open) list.querySelectorAll("details").forEach((o) => { if (o !== d) o.open = false; });
+        }));
+    }
+    function renderFaq(q) {
+      const query = (q || "").trim().toLowerCase();
+      const terms = query.split(/\s+/).filter((t) => t.length >= 2);
+      if (!terms.length) {
+        // grouped by category, nothing open
+        list.innerHTML = FAQ_SECTIONS.map(([cat, items]) =>
+          `<div class="cat">${cat}</div>` + items.map(([Q, A]) => item(Q, A, false)).join("")).join("");
+        none.style.display = "none";
+      } else {
+        // flat, ranked, best match open
+        const flat = FAQ_SECTIONS.flatMap(([, items]) => items).map(([Q, A]) => {
+          let score = 0; const ql = Q.toLowerCase(), al = A.toLowerCase();
+          for (const t of terms) { if (ql.includes(t)) score += 4; if (al.includes(t)) score += 1; }
+          return { Q, A, score };
+        }).filter((i) => i.score > 0).sort((a, b) => b.score - a.score);
+        none.style.display = flat.length ? "none" : "block";
+        list.innerHTML = flat.map((i, idx) => item(i.Q, i.A, idx === 0)).join("");
+      }
+      singleOpen();
+    }
+    renderFaq("");
+    r.getElementById("fqs").addEventListener("input", (e) => renderFaq(e.target.value));
   }
 
   function tryMount() {
