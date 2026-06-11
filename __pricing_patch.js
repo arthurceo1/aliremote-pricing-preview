@@ -354,6 +354,7 @@
     $("npx-eff").style.display = custom ? "none" : "block";
     if (!custom) $("npx-eff").textContent = `≈ ${fmt(Math.round(monthly / n))} per iPhone, everything included, billed ${billing === "yearly" ? "yearly" : "monthly"}`;
     $("npx-buyBtn").textContent = `Get started with ${n >= 50 ? "50+" : n} iPhones →`;
+    if (!custom) $("npx-buyBtn").href = `https://aliremote.com/#/signup?iphones=${n}&connectivity=${conn}&billing=${billing}`;
   }
 
   function initCalEmbed(el) {
@@ -400,6 +401,7 @@
     if (homeLink) (homeLink.closest("li") || homeLink).remove();
     const aboutLink = document.querySelector('header a[href="#video-texts"]');
     if (aboutLink) { aboutLink.textContent = "About"; aboutLink.setAttribute("href", "#about"); }
+    document.querySelectorAll(".how-it-works, a.how-it-works, button.how-it-works").forEach((e) => (e.closest("li") || e).remove());
     const vt = document.getElementById("video-texts");
     if (vt && !document.getElementById("about")) { const a = document.createElement("div"); a.id = "about"; vt.parentElement.insertBefore(a, vt); }
     const clientsLink = document.querySelector('header a[href="#clients"]');
@@ -419,7 +421,7 @@
   }
 
   const killBar = document.createElement("style");
-  killBar.textContent = ".sticky-bar,#intercom-container,.intercom-lightweight-app,[class*=intercom]{display:none!important} .get-started-today-btn{display:none!important} .sticky-cta-buttons{left:auto!important;right:20px!important;bottom:20px!important;transform:none!important;margin:0!important} #back-to-top{bottom:84px!important;right:20px!important} header.landing-header,header{height:auto!important;min-height:0!important} .hero-content{margin-top:30px!important} header .container-header{padding-top:8px!important;padding-bottom:8px!important;height:auto!important;min-height:0!important} header img.logo{height:40px!important;width:auto!important} header .logo{height:auto!important;line-height:0!important} .fade-in-section,.fade-up,.fade-in,[class*=fade-up],[class*=fade-in],[class*=fade]{opacity:1!important;transform:none!important;filter:none!important;visibility:visible!important;animation:none!important;transition:none!important}";
+  killBar.textContent = ".sticky-bar,#intercom-container,.intercom-lightweight-app,[class*=intercom]{display:none!important} .get-started-today-btn{display:none!important} .sticky-cta-buttons{left:auto!important;right:20px!important;bottom:20px!important;transform:none!important;margin:0!important} #back-to-top{bottom:84px!important;right:20px!important} header.landing-header,header{height:auto!important;min-height:0!important} .hero-content{margin-top:30px!important} #clients{padding-bottom:30px!important} header .container-header{padding-top:8px!important;padding-bottom:8px!important;height:auto!important;min-height:0!important} header img.logo{height:40px!important;width:auto!important} header .logo{height:auto!important;line-height:0!important} .fade-in-section,.fade-up,.fade-in,[class*=fade-up],[class*=fade-in],[class*=fade]{opacity:1!important;transform:none!important;filter:none!important;visibility:visible!important;animation:none!important;transition:none!important} .hero-title{transform:scale(1.05)!important}";
   document.head.appendChild(killBar);
 
   const FAQ_SECTIONS = [
@@ -451,7 +453,7 @@
     clients.parentElement.insertBefore(sec, clients.nextSibling);
     const r = sec.attachShadow({ mode: "open" });
     r.innerHTML = `<style>
-      .fq{max-width:760px;margin:0 auto;padding:90px 24px 40px;font-family:Geist,sans-serif}
+      .fq{max-width:760px;margin:0 auto;padding:34px 24px 40px;font-family:Geist,sans-serif}
       .fq *{box-sizing:border-box;margin:0;padding:0;font-family:Geist,sans-serif;color:#000}
       .fq h2{text-align:center;font-size:38px;font-weight:600;letter-spacing:-1px;line-height:1.15;margin-bottom:8px}
       .fq h2 span{background:linear-gradient(90deg,#2239bd 24%,#46d3f6 83%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
