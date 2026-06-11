@@ -388,6 +388,10 @@
     document.querySelectorAll('a.message-btn, a[href*="t.me/aliremoteios"]').forEach((a) => (a.href = "https://t.me/alixtuds"));
     const homeLink = document.querySelector('header a[href="#hero"]');
     if (homeLink) (homeLink.closest("li") || homeLink).remove();
+    const aboutLink = document.querySelector('header a[href="#video-texts"]');
+    if (aboutLink) { aboutLink.textContent = "About"; aboutLink.setAttribute("href", "#about"); }
+    const vt = document.getElementById("video-texts");
+    if (vt && !document.getElementById("about")) { const a = document.createElement("div"); a.id = "about"; vt.parentElement.insertBefore(a, vt); }
     const clientsLink = document.querySelector('header a[href="#clients"]');
     if (clientsLink && !document.querySelector('header a[href="#faq"]')) {
       const li = (clientsLink.closest("li") || clientsLink).cloneNode(true);
@@ -404,7 +408,7 @@
   }
 
   const killBar = document.createElement("style");
-  killBar.textContent = ".sticky-bar,#intercom-container,.intercom-lightweight-app,[class*=intercom]{display:none!important} .get-started-today-btn{display:none!important} .sticky-cta-buttons{left:auto!important;right:20px!important;bottom:20px!important;transform:none!important;margin:0!important} #back-to-top{bottom:84px!important;right:20px!important} header.landing-header,header{height:auto!important;min-height:0!important} header .container-header{padding-top:8px!important;padding-bottom:8px!important;height:auto!important;min-height:0!important} header img.logo{height:40px!important;width:auto!important} header .logo{height:auto!important;line-height:0!important} .fade-in-section,.fade-up,.fade-in,[class*=fade-up],[class*=fade-in],[class*=fade]{opacity:1!important;transform:none!important;filter:none!important;visibility:visible!important;animation:none!important;transition:none!important}";
+  killBar.textContent = ".sticky-bar,#intercom-container,.intercom-lightweight-app,[class*=intercom]{display:none!important} .get-started-today-btn{display:none!important} .sticky-cta-buttons{left:auto!important;right:20px!important;bottom:20px!important;transform:none!important;margin:0!important} #back-to-top{bottom:84px!important;right:20px!important} header.landing-header,header{height:auto!important;min-height:0!important} .hero-content{margin-top:30px!important} header .container-header{padding-top:8px!important;padding-bottom:8px!important;height:auto!important;min-height:0!important} header img.logo{height:40px!important;width:auto!important} header .logo{height:auto!important;line-height:0!important} .fade-in-section,.fade-up,.fade-in,[class*=fade-up],[class*=fade-in],[class*=fade]{opacity:1!important;transform:none!important;filter:none!important;visibility:visible!important;animation:none!important;transition:none!important}";
   document.head.appendChild(killBar);
 
   const FAQ_SECTIONS = [
