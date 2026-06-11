@@ -117,7 +117,8 @@
   .npx .inh-link{display:inline-block;margin-top:18px;color:#2239bd;text-decoration:underline;text-underline-offset:2px;font-weight:600;font-size:15px}
   .npx .inh-link:hover{color:#46d3f6}
   .npx .inh-book{display:flex;flex-direction:column}
-  .npx .cal-embed{width:100%;min-height:560px;border:0;border-radius:16px;background:#fff;box-shadow:0 4px 15px rgba(0,0,0,.05)}
+  .npx .cal-embed{width:100%;min-height:560px;border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 4px 15px rgba(0,0,0,.05)}
+  .npx .cal-embed iframe{width:100%!important;min-height:560px!important;border:0}
   @media(max-width:900px){.npx .tiers{grid-template-columns:repeat(2,1fr)}.npx .sim .simwrap{grid-template-columns:1fr}
     .npx .conn{grid-template-columns:1fr}.npx .inhouse .grid{grid-template-columns:1fr}}
   `;
@@ -280,11 +281,10 @@
             <li><b>Custom plans</b> based on how many iPhones you run</li>
             <li>Best for large teams &amp; full control</li>
           </ul>
-          <a class="inh-link" href="https://cal.com/alixtudss/in-house-discovery" target="_blank" rel="noopener">Book your in-house call →</a>
         </div>
         <div class="inh-book">
           <div class="inh-note">📅 In-house setups are tailored to your operation, so an in-house call is required before getting started.</div>
-          <iframe class="cal-embed" src="https://cal.com/alixtudss/in-house-discovery?embed=true&layout=month_view" title="Book your in-house call" loading="lazy"></iframe>
+          <div class="cal-embed" id="npx-cal"></div>
         </div>
       </div>
     </div></div>
@@ -356,6 +356,16 @@
     $("npx-buyBtn").textContent = `Get started with ${n >= 50 ? "50+" : n} iPhones →`;
   }
 
+  function initCalEmbed(el) {
+    if (!el) return;
+    try {
+      (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+      window.Cal("init", "inhouse", { origin: "https://app.cal.com" });
+      window.Cal.ns["inhouse"]("inline", { elementOrSelector: el, config: { layout: "month_view" }, calLink: "alixtudss/in-house-discovery" });
+      window.Cal.ns["inhouse"]("ui", { hideEventTypeDetails: true, layout: "month_view" });
+    } catch (e) { console.warn("[pricing-patch] cal embed failed", e); }
+  }
+
   function mount(section) {
     section.innerHTML = "";
     section.style.cssText = "min-height:auto;height:auto;padding:0;position:relative;display:block";
@@ -403,6 +413,7 @@
     const tagline = document.querySelector("footer .tagline");
     if (tagline) tagline.innerHTML = "The #1 iPhone remote control solutions.";
     mountFaq();
+    initCalEmbed(root.getElementById("npx-cal"));
     render();
     console.log("[pricing-patch] new pricing mounted (shadow)");
   }
