@@ -237,12 +237,12 @@
           <h2>Build your setup</h2>
           <p class="hint">Move the slider. The price updates live.</p>
           <div class="lbl"><span>How many iPhones?</span><output id="npx-nOut">12 iPhones</output></div>
-          <input type="range" id="npx-n" min="5" max="50" value="12">
+          <input type="range" id="npx-n" min="5" max="50" value="5">
           <div class="ticks"><span>5</span><span>15</span><span>25</span><span>35</span><span>45</span><span>50+</span></div>
           <div class="lbl"><span>Connectivity</span></div>
           <div class="conn">
-            <button class="copt" data-c="wifi"><div class="t">ALI Wi-Fi</div><div class="d">Use your own custom proxy.<br><b>Included, $0</b></div></button>
-            <button class="copt on" data-c="sim"><div class="t">Mobile Data (SIM)</div><div class="d">1 SIM per iPhone.<br><b>$11/mo</b> + $10 setup per SIM</div></button>
+            <button class="copt on" data-c="wifi"><div class="t">ALI Wi-Fi</div><div class="d">Use your own custom proxy.<br><b>Included, $0</b></div></button>
+            <button class="copt" data-c="sim"><div class="t">Mobile Data (SIM)</div><div class="d">1 SIM per iPhone.<br><b>$11/mo</b> + $10 setup per SIM</div></button>
             <button class="copt" data-c="proxy"><div class="t">Mobile Proxy</div><div class="d">1 proxy covers up to 20 iPhones.<br><b>$90/mo</b> + $95 setup per proxy</div></button>
           </div>
           <div class="country" id="npx-countryRow">
@@ -297,7 +297,7 @@
     </div>
   </div>`;
 
-  let conn = "sim";
+  let conn = "wifi";
   let billing = "monthly";
   let root = null; // shadow root, full style isolation from the site CSS
   const fmt = (n) => "$" + n.toLocaleString("en-US");
